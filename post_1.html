@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>~/ Progress in LFS</title>
+
+  <!-- Pixel Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <style>
+    /* Gruvbox Dark Theme Colors */
+    :root {
+      --bg: #282828;
+      --bg-soft: #32302f;
+      --fg: #ebdbb2;
+      --yellow: #fabd2f;
+      --aqua: #8ec07c;
+      --orange: #fe8019;
+      --gray: #a89984;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--fg);
+      font-family: 'Press Start 2P', cursive;
+      margin: 0;
+      padding: 40px 20px;
+      font-size: 10px;
+      line-height: 1.8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+    }
+
+    .terminal {
+      background: var(--bg-soft);
+      border: 1px solid var(--gray);
+      width: 90%;
+      max-width: 800px;
+      padding: 20px;
+      box-shadow: 0 0 10px #1d2021;
+    }
+
+    h1 {
+      color: var(--yellow);
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    a {
+      color: var(--aqua);
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: var(--orange);
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 8px;
+      height: 16px;
+      background-color: var(--fg);
+      animation: blink 1s step-start infinite;
+      vertical-align: middle;
+      margin-left: 4px;
+    }
+
+    @keyframes blink {
+      50% {
+        background-color: transparent;
+      }
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 8px;
+      text-align: center;
+      color: var(--gray);
+    }
+
+    code {
+      background-color: #3c3836;
+      padding: 2px 4px;
+      border-radius: 3px;
+      color: var(--fg);
+    }
+  </style>
+</head>
+<body>
+
+<div class="terminal">
+  <h1>~/progress_in_lfs<span class="cursor"></span></h1>
+
+  <p><strong>$ whoami</strong><br>
+  I am a Computer Science student building my own Operating System from scratch using <strong>Linux From Scratch (LFS)</strong>.</p>
+
+  <p><strong>$ cat progress.txt</strong><br>
+  I have made significant progress in LFS so far. Here are the steps I've completed:</p>
+
+  <ul>
+    <li><strong>File System Creation</strong>: I have successfully created the file system and mounted it. The essential file structure for LFS is now in place.</li>
+    <li><strong>Cross-Compilation Setup</strong>: I've completed the cross-compilation setup, ensuring that the host system can compile code for the target system.</li>
+    <li><strong>Cross-Toolchain</strong>: I have built and tested the cross-toolchain, which includes the necessary tools for compiling the LFS system.</li>
+  </ul>
+
+  <p><strong>$ ./next_steps.sh</strong><br>
+  My next steps include setting up the final system environment, booting into the LFS system, and testing the compiled components.</p>
+
+  <footer>
+    ~ Crafted with :wq and the spirit of LFS ~
+  </footer>
+</div>
+
+</body>
+</html>
